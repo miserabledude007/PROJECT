@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepFake Detection</title>
+    <link rel="stylesheet" href="../static/css/LandingPage.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1 class="heading">
+            LSTM-Based Temporal Analysis for Robust Deep Fake Video Detection
+        </h1>
+        <p id="content"></p>
+        <button type="submit" class="getStarted">
+            <a href="/index">Get Started</a>
+            
+
+            
+        </button>
+
+
+    </div>
+    <script>
+        const text = "Welcome to our deepfake detection platform. Using cutting-edge AI technology, we analyze videos and images to identify any potential signs of manipulation or falsification. Our goal is to offer a trustworthy and efficient solution to help prevent the spread of deepfakes, protecting the authenticity of digital media. With our service, you can easily upload your videos or images for thorough analysis, and we will generate a comprehensive report detailing any possible deepfake content.";
+    
+        const contentElement = document.getElementById("content");
+        let index = 0;
+    
+        function displayText() {
+          if (index < text.length) {
+            contentElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(displayText, 15); // Adjust the delay (in milliseconds) between each letter here
+          }
+        }
+    
+        displayText();
+
+
+      </script>
+</body>
+
+</html>
