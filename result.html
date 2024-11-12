@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Uploaded Video</title>
+  <title>UPLOADED VIDEO</title>
   <script>
     window.onload = function () {
       const videoUrl = localStorage.getItem('uploadedVideo');
@@ -110,7 +109,7 @@
 </head>
 <body>
   <header>
-    <a href="/index">Home</a>
+    <a href="/index">HOME</a>
   </header>
   
   <!-- <h1>Uploaded Video</h1> -->
@@ -118,24 +117,24 @@
     <source src="{{ url_for('static', filename='videos/' + session['video_filename']) }}" type="video/mp4">
   </video> -->
     <!-- <div class="video-container" id="video-container"></div> -->
-    <h1>Extracted Frames</h1>
+    <h1>EXTRACTED FRAMES</h1>
     <div class="image-container" style="margin-left: 10%">
     {% for frame in frame_path %}
     <img src= {{ frame }}>
     {% endfor %}
     </div>
-    <h1>Extracted Faces</h1>
+    <h1>EXTRACTED FACES</h1>
     <div class="face-container" style="margin-left: 10%">
       {% for frame in face_path %}
       <img src= {{ frame }}>
       {% endfor %}
   </div>
-  <h1>Results</h1>
+  <h1>RESULTS</h1>
   <div style="margin-top: 30px;text-align: center;">
     <p style="color: red;font-size: 25px;">{{ prediction }}</p>
   </div>
   <div style="margin-top: 30px;text-align: center;">
-    <p style="color: red;font-size: 25px;">Confidence Percentage =  {{ accuracy }}</p>
+    <p style="color: red;font-size: 25px;">CONFIDENCE PERCENTAGE =  {{ accuracy }}</p>
   </div>
 
     <div class="container">
@@ -144,13 +143,8 @@
         </h1>
         <p id="content"></p>
         <button type="submit" class="getStarted">
-            <a href="/index">Get Started</a>
-            
-
-            
+            <a href="/index">GET STARTED</a>
         </button>
-
-
     </div>
   <footer>
     <p>&copy; Developed by Rangakalyan C S K</p>
