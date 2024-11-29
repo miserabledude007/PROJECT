@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>UPLOADED VIDEO</title>
+  <title>UPLOADED MEDIA</title>
   <link rel="stylesheet" href="../static/css/uploadPage.css">
   <script>
     window.onload = function () {
@@ -129,7 +129,7 @@
 </head>
 <body>
   <header>
-    <a href="/first">HOME</a>
+    <a href="/first">DASHBOARD</a>
   </header>
   <div class="container" style="justify-content: center;">
         <!-- <h1 class="heading">
@@ -147,7 +147,7 @@
   </video> -->
     <!-- <div class="video-container" id="video-container"></div> -->
     <div class="first">
-        <h1>EXTRACTED FRAMES</h1>
+        <h1>FRAME EXTRACTION</h1>
         <div class="image-container" style="margin-left: 10%">
         {% for frame in frame_path %}
         <img src= {{ frame }}>
@@ -155,7 +155,7 @@
         </div>
     </div>
     <div class="second">
-        <h1>EXTRACTED FACES</h1>
+        <h1>FACE EXTRACTION</h1>
         <div class="face-container" style="margin-left: 10%">
             {% for frame in face_path %}
             <img src= {{ frame }}>
@@ -163,12 +163,12 @@
         </div>
     </div>
     <div class="third">
-    <h1 style="margin-top:60px">RESULTS</h1>
+    <h1 style="margin-top:60px">REPORT</h1>
     <div style="margin-top: 20px;text-align: center;">
-    <p style="color: red;font-size: 25px;">PREDICTION = {{ prediction }}</p>
+    <p style="color: red;font-size: 25px;">OUTCOME = {{ prediction }}</p>
     </div>
   <div style="margin-top: 20px;text-align: center;">
-    <p style="color: red;font-size: 25px;">CONFIDENCE PERCENTAGE =  {{ accuracy }}</p>
+    <p style="color: red;font-size: 25px;">ACCURACY PERCENTAGE =  {{ accuracy }}</p>
   </div>
     </div>
 </body>
