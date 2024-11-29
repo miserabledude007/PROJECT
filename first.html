@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CSKRK ME PROJECT</title>
+  <title>DEEP or FAKE ??</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -39,14 +39,14 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-      <h1 class="col-lg-8"><a href="index.html"> <span>CSKRK ME PROJECT</span></a></h1>
+      <h1 class="col-lg-8"><a href="index.html"> <span>DEEP or FAKE ??</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="{{ url_for('first')}}">HOME</a></li>
-          <li><a class="nav-link scrollto" href="{{ url_for('login')}}">LOGIN</a></li>
-<li><a class="nav-link scrollto" href="{{ url_for('chart')}}">ACCURACY</a></li>
+          <li><a class="nav-link scrollto active" href="{{ url_for('first')}}">DASHBOARD</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('login')}}">SIGN-IN</a></li>
+<li><a class="nav-link scrollto" href="{{ url_for('chart')}}">INSIGHTS</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -58,9 +58,9 @@
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-8">
-          <h1>DEEP FAKE FACE DETECTION</h1>
+          <h1>Real or Fake? Detecting Deepfake Videos Using Temporal Models for Video Authentication</h1>
           <div class="btns">
-            <a href="#about" class="btn-menu animated fadeInUp scrollto">ABSTRACT</a>
+            <a href="#about" class="btn-menu animated fadeInUp scrollto">OVERVIEW</a>
           </div>
         </div>
       </div>
@@ -79,9 +79,13 @@
 			 </br>
 			 </br>
             <p >
-The rise of deep fake videos, generated using artificial intelligence techniques to create realistic yet fabricated content, poses a growing threat to the authenticity of digital media. These manipulated videos have the potential to spread misinformation, erode trust in visual content, and disrupt societal norms. To address this challenge, we propose an innovative approach for detecting deep fake videos based on Long Short-Term Memory (LSTM) networks, a class of recurrent neural networks (RNNs) renowned for their ability to learn from sequential data. By focusing on temporal relationships within video frames, our method captures the dynamic aspects of video sequences, enabling effective identification of inconsistencies that often characterize deep fake content, such as unnatural facial expressions or irregular eye movements.
-In our approach, we leverage a combination of pre-processing techniques, including optical flow computation and facial landmark tracking, to enhance frame-level analysis. This allows the LSTM network to focus on subtle, temporal patterns and relationships between successive frames. We further improve the detection process by employing an ensemble of LSTM models, integrated with other machine learning algorithms, to optimize both accuracy and robustness.
-Experiments conducted on a large dataset of both known and previously unseen deep fake videos demonstrate the superior performance of our LSTM-based system, with high detection accuracy and a low rate of false positives. When compared to existing methods, our approach shows clear advantages in terms of generalization and resilience to evolving deep fake techniques. The findings highlight the potential of LSTM-based models as a promising solution to mitigate the harmful impact of deep fakes on public trust and media integrity. As the technology behind deep fake videos continues to advance, our research contributes to the development of more effective tools for safeguarding digital media authenticity and countering the spread of deceptive multimedia.
+As deepfake videos become increasingly prevalent, reliable methods for distinguishing authentic content from manipulated media are essential. This research explores the use of Long Short-Term Memory (LSTM) networks for deepfake detection by analyzing temporal patterns in video sequences. LSTMs, a type of recurrent neural network (RNN), are particularly effective for this task as they excel at capturing dependencies between frames, making them ideal for detecting discrepancies in facial expressions and movements that are common in manipulated videos.
+
+Our approach includes preprocessing video frames to extract key facial landmarks, allowing the LSTM model to better capture the temporal dynamics of facial features. The model is trained on a diverse dataset of both real and deepfake videos, enabling it to learn subtle differences in behavior that distinguish authentic content from manipulated material.
+
+To further improve the model’s accuracy and generalization, we integrate multiple LSTM models in an ensemble framework. Experimental results show that this approach can effectively classify videos as real or fake, outperforming existing detection methods in terms of precision and overall performance.
+
+This work advances video authentication technologies and provides a practical solution for ensuring the integrity of digital media. By accurately detecting manipulated content, our method plays a critical role in combating the spread of misinformation and safeguarding the trustworthiness of online visual media.
 </p>
         </div>
       </div>
