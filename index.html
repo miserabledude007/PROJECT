@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VIDEO UPLOAD</title>
+  <title>MEDIA UPLOAD</title>
   <script>    
     window.onload = function() {
     const scrollBar = document.getElementById('scroll-bar');
@@ -157,11 +157,11 @@
 </head>
 <body>
   <header>
-    <a href="/first">Home</a>
+    <a href="/first">DASHBOARD</a>
   </header>
  
   <div id="upload-form" class="no-background-image">
-    <h2>UPLOAD VIDEO</h2>
+    <h2>UPLOAD MEDIA</h2>
     <form method="post" enctype="multipart/form-data" action="/upload">
       <input type="file" name="file">
       <input type="text" name="scrollValue" value="{{ scrollValueText }}" style="display: none;" id="scrollValueInput">
