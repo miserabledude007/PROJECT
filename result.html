@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>UPLOADED VIDEO</title>
+  <title>UPLOADED MEDIA</title>
   <script>
     window.onload = function () {
       const videoUrl = localStorage.getItem('uploadedVideo');
@@ -109,7 +109,7 @@
 </head>
 <body>
   <header>
-    <a href="/index">HOME</a>
+    <a href="/index">DASHBOARD</a>
   </header>
   
   <!-- <h1>Uploaded Video</h1> -->
@@ -117,33 +117,33 @@
     <source src="{{ url_for('static', filename='videos/' + session['video_filename']) }}" type="video/mp4">
   </video> -->
     <!-- <div class="video-container" id="video-container"></div> -->
-    <h1>EXTRACTED FRAMES</h1>
+    <h1>FRAME EXTRACTION</h1>
     <div class="image-container" style="margin-left: 10%">
     {% for frame in frame_path %}
     <img src= {{ frame }}>
     {% endfor %}
     </div>
-    <h1>EXTRACTED FACES</h1>
+    <h1>FACE EXTRACTION</h1>
     <div class="face-container" style="margin-left: 10%">
       {% for frame in face_path %}
       <img src= {{ frame }}>
       {% endfor %}
   </div>
-  <h1>RESULTS</h1>
+  <h1>REPORT</h1>
   <div style="margin-top: 30px;text-align: center;">
     <p style="color: red;font-size: 25px;">{{ prediction }}</p>
   </div>
   <div style="margin-top: 30px;text-align: center;">
-    <p style="color: red;font-size: 25px;">CONFIDENCE PERCENTAGE =  {{ accuracy }}</p>
+    <p style="color: red;font-size: 25px;">ACCURACY PERCENTAGE =  {{ accuracy }}</p>
   </div>
 
     <div class="container">
         <h1 class="heading">
-            CSKRK ME PROJECT
+            DEEP or FAKE ??
         </h1>
         <p id="content"></p>
         <button type="submit" class="getStarted">
-            <a href="/index">GET STARTED</a>
+            <a href="/index">START EXPLORING</a>
         </button>
     </div>
   <footer>
